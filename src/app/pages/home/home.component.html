@@ -1,0 +1,188 @@
+<app-header />
+
+<app-whatsapp />
+
+<!-- Home Section Start -->
+<section class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-5 col-sm-6 margin-left-setting">
+        <div class="margin-top-150">
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+              <tr>
+                <td>Nombre</td>
+                <td>{{ datos.nombreCompleto }}</td>
+              </tr>
+              <tr>
+                <td>Correo</td>
+                <td>{{ datos.correo }}</td>
+              </tr>
+              <tr>
+                <td>Cargo</td>
+                <td>{{ datos.cargo }}</td>
+              </tr>
+              <tr>
+                <td>Experiencia</td>
+                <td>{{ datos.experiencia }}</td>
+              </tr>
+              <tr>
+                <td>Contacto</td>
+                <td>{{ datos.contacto }}</td>
+              </tr>
+              <tr>
+                <td>Descargar</td>
+                <td style="background-color: #ffb300">
+                  <a
+                    href="../../../assets/pdf/Currículum Cristian Jaimes.pdf"
+                    download
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Mira mi (HV)."
+                    >{{ datos.hv }}</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-sm-6">
+        <div class="me-image">
+          <img
+            style="border-radius: 5%"
+            src="../../../assets/images/bg/foto-portafolio.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Home Section End -->
+
+<!-- Experience Start -->
+<section class="section-space-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section-title">
+          <h2>Mi experiencia</h2>
+          <div class="divider dark">
+            <i class="icon-graduation"></i>
+          </div>
+          <p>
+            "Experiencia y formación: el camino hacia mi pasión tecnológica."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="experience">
+          <div class="experience-item">
+            <div class="experience-circle">
+              <i class="icon-graduation"></i>
+              <p>13, Enero 2022</p>
+            </div>
+            <div class="experience-content experience-color-blue">
+              <h4>DESARROLLADOR WEB</h4>
+              <h6>Node.js</h6>
+              <p>
+                Interacción de 2 APIs para el consumo de datos de un ChatBot y
+                Página web con uso de Framework de Express.js
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-circle">
+              <i class="icon-trophy"></i>
+              <p>1, Ago 2020</p>
+            </div>
+            <div class="experience-content experience-color-blue">
+              <h4>INGENIERIA EN SISTEMAS</h4>
+              <h6>Corporación Unificada Nacional de Educación Superior CUN</h6>
+              <p>
+                "Estudiante de sistemas apasionado por la tecnología, buscando
+                aprender y aplicar conocimientos para desarrollar soluciones
+                innovadoras."
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-circle">
+              <i class="icon-book-open"></i>
+              <p>8, Nov 2016</p>
+            </div>
+            <div class="experience-content experience-color-blue">
+              <h4>BACHILLER ACADEMICO</h4>
+              <h6>Centro Johann Keppler</h6>
+              <p>
+                "Bachiller académico con sed de conocimiento y motivación para
+                enfrentar nuevos desafíos en el mundo educativo y profesional."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="experience">
+          <div class="experience-item">
+            <div class="experience-circle experience-company pink-color-bg">
+              <i class="icon-energy"></i>
+            </div>
+            <div class="experience-content">
+              <h4>COLABORADOR EN UNA PAGINA WEB</h4>
+              <h6>Desarrollo de una pagina web</h6>
+              <p>
+                "Colaborador en una página web, apasionado por el desarrollo de
+                un eCommerce, trabajando en equipo para crear una experiencia de
+                compra en línea única y satisfactoria."
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-circle experience-company pink-color-bg">
+              <i class="icon-ghost"></i>
+            </div>
+            <div class="experience-content">
+              <h4>LOGROS DENTRO DEL DESARROLLO</h4>
+              <h6>2022-2023, Desarrollador Junior</h6>
+              <p>Se contribuyó a enriquecer la experiencia del usuario.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-circle experience-company pink-color-bg">
+              <i class="icon-compass"></i>
+            </div>
+            <div class="experience-content">
+              <h4>TAREAS Y ASIGNACIONES</h4>
+              <h6>2022-2023, Desarrollador Junior</h6>
+              <p>
+                • Participación en workshops de concepto de lógica y estrategia
+                aportando ideas y sugerencias para el desarrollo del Back.
+                <br />
+                • Desarrollo del Back-End de integraciones con terceros usando
+                MySQL, Express y GIT <br />
+                • Realización de testing y documentación de código junto al
+                equipo del Front-End
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experience End -->
+
+<app-footer />

@@ -1,0 +1,137 @@
+<app-header />
+
+<app-whatsapp />
+
+<!-- Call to Action Start -->
+<section class="call-to-action bg-cover section-space-padding text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>¿Quieres saber más sobre mí?</h2>
+      </div>
+
+      <div class="col-md-4">
+        <div class="text-center">
+          <a
+            class="button button-style button-style-color-2 smoth-scroll"
+            href="#contact"
+            >Contactame</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to Action End -->
+
+<!-- Contact Start -->
+<section id="contact" class="section-space-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section-title">
+          <h2>Cantactame.</h2>
+          <div class="divider dark">
+            <i class="icon-envelope-open"></i>
+          </div>
+          <p>
+            "¡Contáctame hoy mismo y juntos hagamos realidad tu proyecto! Estoy
+            aquí para brindarte soluciones web personalizadas y de calidad."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="margin-top-30 margin-bottom-50">
+      <div class="row">
+        <div class="col-md-offset-3 col-sm-offset-2 col-md-6 col-sm-8">
+          <div class="row">
+            <div class="contact-us-detail">
+              <a href="">{{ datos.correo }}</a>
+            </div>
+            <form class="contact-us pattern-bg">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Nombre:"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Correo:"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="website"
+                    class="form-control"
+                    placeholder="Sitio web"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-control"
+                    placeholder="De donde eres?"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <select id="subject" class="form-group form-control">
+                  <option value="" selected disabled>Solicitud</option>
+                  <option>Diseño y desarrollo de sitios web</option>
+                  <option>Desarrollo Wordpress</option>
+                  <option>Optimización de motores de búsqueda</option>
+                  <option>Sitio web móvil</option>
+                  <option>Quiero hablar en general</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="textarea-message form-group">
+                  <textarea
+                    id="message"
+                    class="textarea-message form-control"
+                    placeholder="Mensaje:"
+                    rows="5"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="button button-style button-style-dark button-style-color-2"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact End -->
+
+<app-footer />

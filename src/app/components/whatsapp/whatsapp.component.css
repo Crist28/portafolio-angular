@@ -1,0 +1,60 @@
+.whatsapp-container {
+  position: fixed;
+  width: 12%; /* Ajusta el tamaño relativo según tus necesidades */
+  height: auto;
+  bottom: 12%; /* Ajusta la posición relativa según tus necesidades */
+  right: -5%; /* Ajusta la posición relativa según tus necesidades */
+  z-index: 100;
+}
+
+.whatsapp {
+  width: 80%;
+  height: 80%;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 3vw; /* Ajusta el tamaño del icono relativo al ancho de la pantalla */
+  box-shadow: 2px 2px 3px #999;
+}
+
+/* Añade estilos adicionales para dispositivos más pequeños si es necesario */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    width: 15%;
+    height: auto;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .whatsapp {
+    font-size: 5vw;
+  }
+}
+
+/* Añade estilos adicionales para dispositivos aún más pequeños si es necesario */
+@media (max-width: 480px) {
+  .whatsapp-container {
+    width: 20%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+
+  .whatsapp {
+    font-size: 6vw;
+  }
+}
+
+/* Añade estilos adicionales para dispositivos más grandes si es necesario */
+@media (min-width: 1200px) {
+  .whatsapp-container {
+    width: 8%;
+    height: auto;
+    bottom: 12%;
+    right: 2%;
+  }
+
+  .whatsapp {
+    font-size: 2.5vw;
+  }
+}
