@@ -17,7 +17,7 @@ export class HomeComponent {
     correo : 'cristianjaimes691@gmail.com',
     cargo : 'Desarrollador web',
     experiencia : '1 año',
-    contacto : '3017592451',
+    contacto : '+57 324 449 7948',
     hv: 'Hoja de vida'
   };
 
