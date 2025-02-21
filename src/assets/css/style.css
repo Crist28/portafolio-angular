@@ -1300,8 +1300,11 @@ ul.portfolio li.active {
 
       .services-section .services-detail i {
           font-size: 30px;
-          margin-top: 45px;
       }
+      .services-section .services-detail svg {
+        font-size: 30px;
+        margin-top: 45px; /* Elimina el margen superior */
+    }
 	  
       .owl-theme .owl-controls .owl-buttons div {
           padding: 6px 10px;
