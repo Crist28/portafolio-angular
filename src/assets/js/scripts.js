@@ -81,10 +81,8 @@
 
     $(".portfolio-popup").magnificPopup({
       type: "image",
-
       gallery: { enabled: true },
       zoom: { enabled: true, duration: 500 },
-
       image: {
         markup:
           '<div class="mfp-figure portfolio-pop-up">' +
@@ -95,9 +93,42 @@
           '<div class="mfp-counter"></div>' +
           "</div>" +
           "</div>",
-
         titleSrc: function (item) {
           return item.el.attr("title");
+        },
+      },
+      callbacks: {
+        open: function () {
+          const img = this.content.find('img');
+          const imgWidth = img.width();
+          const imgHeight = img.height();
+    
+          const maxWidth = 900; // Ancho máximo del modal
+          const maxHeight = 900; // Altura máxima del modal
+    
+          let newWidth = imgWidth;
+          let newHeight = imgHeight;
+    
+          if (imgWidth > maxWidth) {
+            newWidth = maxWidth;
+            newHeight = (imgHeight * maxWidth) / imgWidth;
+          }
+    
+          if (newHeight > maxHeight) {
+            newHeight = maxHeight;
+            newWidth = (imgWidth * maxHeight) / imgHeight;
+          }
+    
+          this.content.css({
+            width: newWidth,
+            height: newHeight,
+          });
+    
+          this.container.css({
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+          });
         },
       },
     });

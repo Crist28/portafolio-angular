@@ -15,10 +15,10 @@ export class HomeComponent {
   datos = {
     nombreCompleto : 'Cristian Jaimes',
     correo : 'cristianjaimes691@gmail.com',
-    cargo : 'Desarrollador web',
+    cargo : 'Desarrollador de software',
     experiencia : '1 año',
-    contacto : '+57 324 449 7948',
-    hv: 'Hoja de vida'
+    contacto : '+57 3244497948',
+    hv: 'Currículum'
   };
 
   nombreCompleto = 'Cristian Jaimes';
